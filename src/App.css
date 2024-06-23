@@ -32,7 +32,7 @@ body {
   }
 }
 
-img {
+imgy {
   max-width: 100%;
   height: auto;
   vertical-align: top;
@@ -125,8 +125,8 @@ ul,
 }
 
 .content-block ul li:before {
-  content: '\f101';
-  font-family: 'fontawesome';
+  content: "\f101";
+  font-family: "fontawesome";
   position: absolute;
   top: 0;
   left: 0;
@@ -153,6 +153,10 @@ ul,
   transition: background 0.3s linear, color 0.3s linear;
   -webkit-transition: background 0.3s linear, color 0.3s linear;
 }
+.img {
+  width: 100px;
+  height: 100px;
+}
 
 .btn.btn-primary:focus,
 .btn.btn-primary:hover {
@@ -166,10 +170,10 @@ ul,
   font-size: 15px;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=search],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
 textarea {
   background: #fff;
   border: 1px solid #cccccc;
@@ -182,59 +186,59 @@ textarea {
   line-height: 20px;
 }
 
-input[type=text]::-webkit-input-placeholder,
-input[type=email]::-webkit-input-placeholder,
-input[type=tel]::-webkit-input-placeholder,
-input[type=search]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: gray;
 }
 
-input[type=text]::-moz-placeholder,
-input[type=email]::-moz-placeholder,
-input[type=tel]::-moz-placeholder,
-input[type=search]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
 textarea::-moz-placeholder {
   opacity: 1;
   color: gray;
 }
 
-input[type=text]:-moz-placeholder,
-input[type=email]:-moz-placeholder,
-input[type=tel]:-moz-placeholder,
-input[type=search]:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder,
 textarea:-moz-placeholder {
   color: gray;
 }
 
-input[type=text]:-ms-input-placeholder,
-input[type=email]:-ms-input-placeholder,
-input[type=tel]:-ms-input-placeholder,
-input[type=search]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: gray;
 }
 
-input[type=text].placeholder,
-input[type=email].placeholder,
-input[type=tel].placeholder,
-input[type=search].placeholder,
+input[type="text"].placeholder,
+input[type="email"].placeholder,
+input[type="tel"].placeholder,
+input[type="search"].placeholder,
 textarea.placeholder {
   color: gray;
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-input[type=search]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
 textarea:focus {
   outline: none;
 }
 
-.newsletter-block input[type=text],
-.newsletter-block input[type=email],
-.newsletter-block input[type=tel],
-.newsletter-block input[type=search],
+.newsletter-block input[type="text"],
+.newsletter-block input[type="email"],
+.newsletter-block input[type="tel"],
+.newsletter-block input[type="search"],
 .newsletter-block textarea {
   border: 0;
 }
@@ -261,12 +265,12 @@ textarea {
 }
 
 .title-holder .subtitle:before {
-  content: '-';
+  content: "-";
   margin: 0 5px 0 0;
 }
 
 .title-holder .subtitle:after {
-  content: '-';
+  content: "-";
   margin: 0 0 0 5px;
 }
 
@@ -332,7 +336,7 @@ textarea {
   height: 13px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  content: '';
+  content: "";
   border-style: solid;
   border-color: #fff;
   border-width: 1px 1px 0 0;
@@ -346,24 +350,24 @@ textarea {
   background: #f41a1a;
 }
 
-.pagination>li.active a {
+.pagination > li.active a {
   background: #f64b4b;
   border-color: #f64b4b;
 }
 
-.pagination>li.active a:hover {
+.pagination > li.active a:hover {
   background: #f64b4b;
   border-color: #f64b4b;
 }
 
-.pagination>li>a {
+.pagination > li > a {
   color: #f64b4b;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   padding: 6px 15px 12px;
 }
 
-.pagination>li>a:hover {
+.pagination > li > a:hover {
   background: #f64b4b;
   color: #fff;
   border-color: #f64b4b;
@@ -444,7 +448,7 @@ textarea {
 }
 
 #header .navbar-collapse a:before {
-  content: '';
+  content: "";
   background: #f64b4b;
   height: 1px;
   position: absolute;
@@ -481,7 +485,7 @@ textarea {
 }
 
 .hero-block .carousel-item:before {
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
@@ -565,19 +569,19 @@ textarea {
   font-size: 18px;
 }
 
-.works-block .portfoliolist>div {
+.works-block .portfoliolist > div {
   padding: 15px;
   overflow: hidden;
 }
 
-.works-block .portfoliolist>div img {
+.works-block .portfoliolist > div img {
   position: relative;
   top: 0;
   -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.works-block .portfoliolist>div .label {
+.works-block .portfoliolist > div .label {
   position: absolute;
   height: 60px;
   bottom: -60px;
@@ -590,22 +594,22 @@ textarea {
   color: #fff;
 }
 
-.works-block .portfoliolist>div h3 {
+.works-block .portfoliolist > div h3 {
   margin: 0 0 5px;
   color: #f64b4b;
   font-size: 16px;
 }
 
-.works-block .portfoliolist>div p {
+.works-block .portfoliolist > div p {
   margin: 0;
   font-size: 12px;
 }
 
-.works-block .portfoliolist>div:hover .label {
+.works-block .portfoliolist > div:hover .label {
   bottom: 0;
 }
 
-.works-block .portfoliolist>div:hover img {
+.works-block .portfoliolist > div:hover img {
   transform: scale(1.08);
 }
 
@@ -688,13 +692,13 @@ textarea {
   background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('assets/images/bg-testimonial.jpg');
+  background-image: url("assets/images/bg-testimonial.jpg");
   position: relative;
   color: #fff;
 }
 
 .testimonials-block:before {
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
@@ -737,7 +741,7 @@ textarea {
 }
 
 .testimonials-block .name:before {
-  content: '-';
+  content: "-";
   margin: 0 5px 0 0;
 }
 
@@ -758,7 +762,7 @@ textarea {
   margin: 0;
 }
 
-.pricing-block .row>div {
+.pricing-block .row > div {
   text-align: center;
   padding: 0;
   position: relative;
@@ -796,7 +800,7 @@ textarea {
 }
 
 .pricing-block div[class*="col"]:nth-child(2):before {
-  content: 'Popular';
+  content: "Popular";
   text-transform: uppercase;
   position: absolute;
   top: 40px;
@@ -961,10 +965,9 @@ textarea {
 }
 
 @media only screen and (min-width: 1025px) {
-
-  a[href^=tel],
-  a[href^=skype],
-  a[href^=sms] {
+  a[href^="tel"],
+  a[href^="skype"],
+  a[href^="sms"] {
     cursor: default;
     pointer-events: none;
   }
@@ -990,10 +993,10 @@ textarea {
     padding: 9px 35px;
   }
 
-  input[type=text],
-  input[type=email],
-  input[type=tel],
-  input[type=search],
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="search"],
   textarea {
     padding: 5px 10px;
     font-size: 15px;
@@ -1026,7 +1029,7 @@ textarea {
     margin: 0 0 25px;
   }
 
-  .works-block .portfoliolist>div .label {
+  .works-block .portfoliolist > div .label {
     height: 50px;
   }
 }
@@ -1103,7 +1106,7 @@ textarea {
     padding: 40px 0 20px;
   }
 
-  .works-block .portfoliolist>div {
+  .works-block .portfoliolist > div {
     padding: 0 10px 20px;
   }
 
