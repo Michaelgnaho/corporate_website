@@ -32,7 +32,7 @@ body {
   }
 }
 
-imgy {
+img {
   max-width: 100%;
   height: auto;
   vertical-align: top;
@@ -152,10 +152,6 @@ ul,
   text-transform: uppercase;
   transition: background 0.3s linear, color 0.3s linear;
   -webkit-transition: background 0.3s linear, color 0.3s linear;
-}
-.img {
-  width: 100px;
-  height: 100px;
 }
 
 .btn.btn-primary:focus,
