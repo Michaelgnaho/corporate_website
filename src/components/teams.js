@@ -106,7 +106,7 @@ export default function AppTeam() {
           {teamsData.map((team) => {
             return (
               <Col sm={3} key={team.id}>
-                <div className="image imgy">
+                <div className="image">
                   <Image src={team.image} />
                   <div className="overlay">
                     <div className="socials">
