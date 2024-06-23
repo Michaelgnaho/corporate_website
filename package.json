@@ -1,7 +1,6 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "http://Michaelgnaho.github.io/corporate_website",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.24.7",
