@@ -39,17 +39,21 @@ export default function AppFooter() {
 			<div className='socials'>
     <ul>
         <li>
-            <a href="https://web.facebook.com/?_rdc=1&_rdr">
+            <a href="https://web.facebook.com/micheal.adeyemi.963/" target="_blank"
+                rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
             </a>
         </li>
         <li>
-            <a href="https://x.com/MichaelGnaho">
+            <a href="https://x.com/MichaelGnaho" target="_blank"
+                rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/in/michael-a-m-a-g-7b487020b/">
+            <a  href="https://www.linkedin.com/in/michael-adeyemi-gnaho-7b487020b/"
+                target="_blank"
+                rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in"></i>
             </a>
         </li>
