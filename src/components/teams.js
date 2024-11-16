@@ -13,7 +13,7 @@ const teamsData = [
     name: "Michael Gnaho",
     designation: "CEO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "Michael is a visionary leader with a passion for innovation. He brings years of experience in business strategy and leadership to drive the company’s success.",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const teamsData = [
     name: "David Antony",
     designation: "Manager",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "David is a skilled manager who ensures smooth operations and effective team collaboration. His dedication to excellence keeps projects on track and clients satisfied.",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const teamsData = [
     name: "Nicholas Perry",
     designation: "UX Designer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "Nicholas is a creative UX designer who focuses on crafting intuitive and engaging user experiences. His designs combine aesthetics with functionality.",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const teamsData = [
     name: "Sarah Wills",
     designation: "Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "Sarah is a talented developer with expertise in building scalable and robust applications. Her technical skills and attention to detail ensure high-quality results.",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const teamsData = [
     name: "Sophia Pitt",
     designation: "Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "Sophia is a passionate developer who excels at writing clean and efficient code. She is committed to creating innovative solutions for complex challenges.",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const teamsData = [
     name: "Taylor Lopez",
     designation: "Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "Taylor specializes in back-end development, ensuring the systems are reliable, secure, and optimized for performance. He is a problem-solver at heart.",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const teamsData = [
     name: "Ryan Giggs",
     designation: "Content Writer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "Ryan is a creative content writer who crafts compelling and engaging copy. His words help communicate the brand's message effectively to the audience.",
   },
   {
     id: 8,
@@ -90,53 +90,48 @@ const teamsData = [
     name: "David Smith",
     designation: "SEO Expert",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+      "David is an experienced SEO expert who specializes in improving website visibility and driving organic traffic. His strategies are data-driven and results-oriented.",
   },
 ];
 
 export default function AppTeam() {
   return (
-    <section id="teams" className="block teams-block">
+    <section id="teams" className="block teams-block animate">
       <Container fluid>
-        <div className="title-holder">
+        <div className="title-holder animate">
           <h2>Our Teams</h2>
           <p className="subtle">some of our expert</p>
         </div>
         <Row>
           {teamsData.map((team) => {
             return (
-              <Col sm={3} key={team.id}>
-                <div className="image">
-                  <Image src={team.image} />
-                  <div className="overlay">
-                    <div className="socials">
+              <Col sm={3} key={team.id} className="animate">
+                <div className="image animate">
+                  <Image src={team.image} className="animate" />
+                  <div className="overlay ">
+                    <div className="socials animate">
                       <ul>
                         <li>
-                          {" "}
-                          <a href={team.fbLink}>
-                            {" "}
-                            <i className="fab fa-facebook-f"></i>{" "}
-                          </a>{" "}
+                          <a href={team.fbLink} className="animate">
+                            <i className="fab fa-facebook-f"></i>
+                          </a>
                         </li>
                         <li>
-                          {" "}
-                          <a href={team.twitterLink}>
+                          <a href={team.twitterLink} className="animate">
                             <i className="fab fa-twitter"></i>
-                          </a>{" "}
+                          </a>
                         </li>
                         <li>
-                          {" "}
-                          <a href={team.linkedinLink}>
-                            <i className="fab fa-linkedin-in"></i>{" "}
-                          </a>{" "}
+                          <a href={team.linkedinLink} className="animate">
+                            <i className="fab fa-linkedin-in"></i>
+                          </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div></div>
                 </div>
 
-                <div className="content">
+                <div className="content animate">
                   <h3>{team.name}</h3>
                   <span>{team.designation}</span>
                   <p>{team.description}</p>

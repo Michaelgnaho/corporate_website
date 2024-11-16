@@ -82,20 +82,20 @@ const worksData = [
 
 export default function AppWorks(params) {
   return (
-    <section id="works" className="block works-block">
+    <section id="works" className="block works-block animate">
       <Container fluid>
-        <div className="title-holder">
+        <div className="title-holder animate">
           <h2>Our works</h2>
           <div>our awesome works</div>
         </div>
-        <Row className="portfoliolist">
+        <Row className="portfoliolist animate">
           {worksData.map((work) => {
             return (
-              <Col sm={4} key={work.id}>
-                <div className="portfolio-wrapper">
-                  <a href={work.link}>
-                    <Image src={work.image} />
-                    <div className="label text-center">
+              <Col sm={4} key={work.id} className="animate">
+                <div className="portfolio-wrapper animate">
+                  <a href={work.link} className="animate">
+                    <Image src={work.image} className="animate" />
+                    <div className="label text-center ">
                       <h3>{work.title}</h3>
                       <p>{work.subtitle}</p>
                     </div>
@@ -105,7 +105,7 @@ export default function AppWorks(params) {
             );
           })}
         </Row>
-        <Pagination>{items}</Pagination>
+        <Pagination className="animate">{items}</Pagination>
       </Container>
     </section>
   );

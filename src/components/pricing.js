@@ -25,48 +25,47 @@ const pricingData = [
 	  features: ['Wireframing', 'Visual Design', 'Unlimited pages', 'Free Hosting', 'Support & Assistance'],
 	  link: 'https://www.twitter.com'
 	}
-  ]
+];
 
+export default function AppPricing() {
+	return (
+		<section id="pricing" className="block pricing-block animate">
+			<Container fluid="md" className="animate">
+				<div className="title-holder animate">
+					<h2>Pricing & plans</h2>
+					<p>check our pricing & plans</p>
+				</div>
+				<Row className="animate">
+					{pricingData.map((pricing) => {
+						return (
+							<Col sm={4} key={pricing.id} className="animate">
+								<div className="heading animate">
+									<h3>{pricing.plan}</h3>
+									<h2 children="price">{pricing.price}</h2>
+								</div>
 
-export default function  AppPricing() {
+								<div className="content animate">
+									<ListGroup className="animate">
+										{pricing.features.map((feature, index) => {
+											return (
+												<ListGroup.Item key={index} className="animate">
+													{feature}
+												</ListGroup.Item>
+											);
+										})}
+									</ListGroup>
+								</div>
 
-	return <section id = "pricing" className="block pricing-block"> 
-	<Container fluid="md">
-	<div className='title-holder'>
-	<h2> Pricing & plans </h2>
-	<p> check our pricing & plans </p>
-	</div>
-	<Row>
-
-	{pricingData.map(pricing => {
-
-		return(
-			<Col sm= {4} key={pricing.id}>
-	  <div className='heading'>
-	  <h3>{pricing.plan}</h3>
-	  <h2 children ="price">{pricing.price}</h2>
-	  </div>
-
-	  <div className='content'> 
-	  <ListGroup>
-	  {pricing.features.map((index, feature) => {
-		return <ListGroup.Item key={index}>{feature}</ListGroup.Item>
-	  } )}
-    </ListGroup>
-
-	  </div>
-	  <div className='btn-holder'>
-		<a className='btn btn-primary' href={pricing.link}>ORDER NOW!</a>
-	  </div>
-
-	  
-	  </Col>
-
-		)
-	})}
-	 
-	</Row>
-  </Container>
-  </section>
-	
+								<div className="btn-holder animate">
+									<a className="btn btn-primary animate" href={pricing.link}>
+										ORDER NOW!
+									</a>
+								</div>
+							</Col>
+						);
+					})}
+				</Row>
+			</Container>
+		</section>
+	);
 }

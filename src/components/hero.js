@@ -4,25 +4,26 @@ var heroData = [
 	{
 	  id: 1,
 	  image: require('../assets/images/img-hero1.jpg'),
-	  title: 'The perfect design for your website',
-	  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit dicta nulla. Consequuntur obcaecati officiis, labore doloribus non tempore impedit consequatur ab dolor. Explicabo quam repellendus vero omnis, nisi odio!',
+	  title: 'The Perfect Design for Your Website',
+	  description: 'Discover stunning, user-friendly designs tailored to elevate your online presence. Our innovative solutions ensure your website stands out in today’s digital world.',
 	  link: 'https://www.google.com'
 	},
 	{
 	  id: 2,
 	  image: require('../assets/images/img-hero2.jpg'),
 	  title: 'Start Your Future Financial Plan',
-	  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit dicta nulla. Consequuntur obcaecati officiis, labore doloribus non tempore impedit consequatur ab dolor. Explicabo quam repellendus vero omnis, nisi odio!',
+	  description: 'Take charge of your financial future with tools and strategies designed to help you save, invest, and grow. Secure a better tomorrow today.',
 	  link: 'https://www.facebook.com'
 	},
 	{
 	  id: 3,
 	  image: require('../assets/images/img-hero3.jpg'),
 	  title: 'Enjoy the Difference',
-	  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit dicta nulla. Consequuntur obcaecati officiis, labore doloribus non tempore impedit consequatur ab dolor. Explicabo quam repellendus vero omnis, nisi odio!',
+	  description: 'Experience a new level of innovation and excellence. Discover services that transform ordinary into extraordinary, designed just for you.',
 	  link: 'https://www.twitter.com'
 	}
-  ]
+  ];
+  
 
 
 export default function AppHero()
